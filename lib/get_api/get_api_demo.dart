@@ -1,5 +1,5 @@
-import 'package:api_demo/comment_model.dart';
-import 'package:api_demo/network_api.dart';
+import 'package:api_demo/get_api/comment_model.dart';
+import 'package:api_demo/get_api/network_api.dart';
 import 'package:flutter/material.dart';
 
 class GetApiDemo extends StatefulWidget {

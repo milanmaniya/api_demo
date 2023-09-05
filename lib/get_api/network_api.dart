@@ -1,4 +1,4 @@
-import 'package:api_demo/comment_model.dart';
+import 'package:api_demo/get_api/comment_model.dart';
 import 'package:http/http.dart' as http;
 
 class NetworkApi {
