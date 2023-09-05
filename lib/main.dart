@@ -1,4 +1,5 @@
 import 'package:api_demo/get_api/get_api_demo.dart';
+import 'package:api_demo/post_api/post_api_demo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const GetApiDemo(),
+      home: const PostApiDmeo(),
     );
   }
 }
