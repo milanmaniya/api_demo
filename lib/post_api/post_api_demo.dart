@@ -1,3 +1,4 @@
+import 'package:api_demo/post_api/network_api_post.dart';
 import 'package:flutter/material.dart';
 
 class PostApiDmeo extends StatefulWidget {
@@ -24,6 +25,7 @@ class _PostApiDmeoState extends State<PostApiDmeo> {
               TextField(
                 controller: txt1,
                 decoration: InputDecoration(
+                  labelText: 'Title',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -35,6 +37,7 @@ class _PostApiDmeoState extends State<PostApiDmeo> {
               TextField(
                 controller: txt2,
                 decoration: InputDecoration(
+                  labelText: 'Body',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -46,6 +49,7 @@ class _PostApiDmeoState extends State<PostApiDmeo> {
               TextField(
                 controller: txt3,
                 decoration: InputDecoration(
+                  labelText: 'UserId',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
@@ -55,7 +59,9 @@ class _PostApiDmeoState extends State<PostApiDmeo> {
                 height: 30,
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () async {
+                  await NetworkPostApi.createUser(data: '');
+                },
                 child: const Text('Submit'),
               ),
             ],
